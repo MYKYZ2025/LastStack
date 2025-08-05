@@ -7,3 +7,7 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
+import alienGreeting from './lib/alien-alienGreeting.js';
+
+alienGreeting('Give us all your candy!', false);
+console.log('This log comes from assets/app.js - welcome to AssetMapper!')
