@@ -9,16 +9,18 @@
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.16",
+        "symfony/asset-mapper": "6.4.*",
         "symfony/console": "6.4.x-dev",
         "symfony/dotenv": "6.4.x-dev",
         "symfony/flex": "^2",
         "symfony/form": "6.4.x-dev",
-        "symfony/framework-bundle": "6.4.x-dev",
+        "symfony/framework-bundle": "6.4.*",
         "symfony/monolog-bundle": "^3.0",
-        "symfony/runtime": "6.4.x-dev",
+        "symfony/runtime": "6.4.*",
         "symfony/security-csrf": "6.4.x-dev",
         "symfony/twig-bundle": "6.4.x-dev",
         "symfony/validator": "6.4.x-dev",
+        "symfony/webpack-encore-bundle": "1.17",
         "symfony/yaml": "6.4.x-dev",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
@@ -54,7 +56,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "importmap:install": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"
