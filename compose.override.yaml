@@ -1,8 +1,4 @@
-version: '3'
-
 services:
-###> doctrine/doctrine-bundle ###
-  database:
+  symfony_mysql_db:
     ports:
-      - "5432"
-###< doctrine/doctrine-bundle ###
+      - "3308:3306"
