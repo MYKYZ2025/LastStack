@@ -1,15 +1,11 @@
-import '../styles/alien-greeting.css';
-
 export default function(message, inPeace = false) {
-    if(!inPeace){
+    if (!inPeace) {
+        // Dodajemy klasę do <body>, aby uruchomić ciemnozielone tło
+        // Dynamiczny import stylu (tylko jeśli plik istnieje!)
         setTimeout(() => {
-            import('../styles/alien-greeting.css');
+            document.body.classList.add('alien-invasion');
         }, 4000);
     }
-
-
-
-
 
     console.log(`${message}! ${inPeace ? '🕊️ We come in peace.' : '💥 Or else!'}`);
 }

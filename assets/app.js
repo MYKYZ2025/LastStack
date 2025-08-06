@@ -7,8 +7,9 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
-import alienGreeting from './lib/alien-greeting.js';
+import './styles/alien-greeting.css';
 import JSConfetti from 'js-confetti';
+import alienGreeting from './lib/alien-greeting.js';
 
 const jsConfetti = new JSConfetti()
 jsConfetti.addConfetti()
