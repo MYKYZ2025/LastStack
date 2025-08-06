@@ -7,11 +7,11 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
-import alienGreeting from './lib/alien-alienGreeting.js';
-import JSConfetti from 'js-confetti'; // a BARE module !!!
+import alienGreeting from './lib/alien-greeting.js';
+import JSConfetti from 'js-confetti';
 
 const jsConfetti = new JSConfetti()
 jsConfetti.addConfetti()
 
 alienGreeting('Give us all your candy!', false);
-console.log('This log comes from assets/app.js - welcome to AssetMapper!')
+console.log('This log comes from assets/app.js - welcome to AssetMapper!');
