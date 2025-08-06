@@ -5,3 +5,11 @@
 body {
     background-color: lightgreen;
 }
+
+.text-gray-900{
+    color: black;
+}
+
+.kutas{
+    color: red;
+}
